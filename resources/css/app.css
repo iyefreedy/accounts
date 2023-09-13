@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .navbar-root-base {
+        @apply fixed z-30 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700;
+    }
+
+    .navbar-root-inner {
+        @apply mx-auto flex flex-wrap items-center justify-between;
+    }
+
+    .tooltip-target {
+        @apply w-fit dark:text-white;
+    }
+
+    .sidebar-base {
+        @apply flex fixed top-0 left-0 z-20 flex-col flex-shrink-0 pt-16 h-full duration-75 border-r border-gray-200 lg:flex transition-width dark:border-gray-700;
+    }
+
+    .sidebar-inner {
+        @apply h-full overflow-y-auto overflow-x-hidden rounded bg-white py-4 px-3 dark:bg-gray-800;
+    }
+}
